@@ -1,0 +1,19 @@
+{
+  "name": "apiRestMongo",
+  "version": "1.0.0",
+  "description": "ini",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon --inspect -r dotenv/config main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
