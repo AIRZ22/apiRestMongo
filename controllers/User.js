@@ -9,7 +9,7 @@ const getAllUsers = async (req,res,next)=>{
 }
 const addUser = async (req,res,next)=>{
     let newUser= new User();
-    newUser.login= req.body.login;
+    newUser.email= req.body.email;
     newUser.password= req.body.password;
     newUser.firstName= req.body.firstName;
     newUser.lastName= req.body.lastName;
@@ -30,7 +30,7 @@ const getUser = async (req,res,next)=>{
 }
 const editUser = async (req,res,next)=>{
     let editUser=await User.findById(req.params.id);
-    editUser.login= req.body.login;
+    editUser.email= req.body.email;
     editUser.password= req.body.password;
     editUser.firstName= req.body.firstName;
     editUser.lastName= req.body.lastName;

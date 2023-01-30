@@ -4,11 +4,13 @@ const { getAllUsers, addUser, getUser, editUser, deleteUser }= require("../contr
 
 userRouter
     .route("/")
+    
     .get(getAllUsers)
     .post(addUser);
 
 userRouter
     .route("/:id")
+    
     .get(getUser)
     .put(editUser)
     .delete(deleteUser);
